@@ -1,0 +1,25 @@
+{
+  "name": "mcalendar",
+  "version": "1.0.0",
+  "description": "Pure JS event calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llooyydd2004/mCalendar.git"
+  },
+  "keywords": [
+    "calendar",
+    "js",
+    "event",
+    "html"
+  ],
+  "author": "Martin Blumentritt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llooyydd2004/mCalendar/issues"
+  },
+  "homepage": "https://github.com/llooyydd2004/mCalendar#readme"
+}
