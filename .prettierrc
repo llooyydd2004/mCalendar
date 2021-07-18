@@ -1,0 +1,14 @@
+{
+	"trailingComma": "none",
+	"semi": false,
+	"singleQuote": true,
+	"tabWidth": 4,
+	"useTabs": true,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "parser":"babel",
+  "htmlWhitespaceSensitivity": "css",
+  "printWidth": 160,
+  "proseWrap": "never",
+  "cursorOffset": -1
+}

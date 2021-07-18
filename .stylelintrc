@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["extend", "include", "mixin"]
+      }
+    ],
+    "color-hex-length": "long",
+    "comment-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-empty-line-before": "never",
+    "declaration-no-important": true,
+    "font-family-no-duplicate-names": true,
+    "function-parentheses-newline-inside": "always-multi-line",
+    "function-parentheses-space-inside": "never-single-line",
+    "max-nesting-depth": [
+      6,
+      {
+        "ignore": ["pseudo-classes", "blockless-at-rules"],
+        "ignoreAtRules": ["/before/", /before/, "&::before"]
+      }
+    ],
+    "max-line-length": [
+      80,
+      "ignore": ["comments"]
+    ],
+    "selector-attribute-quotes": "always",
+    "selector-class-pattern": "\
+      ^([a-z][a-z0-9]*)(-[a-z0-9]+)*$|\
+    ",
+    "selector-max-id": 1,
+    "selector-no-qualifying-type": [
+      true,
+      "ignore": [
+        "attribute"
+      ]
+    ],
+    "selector-type-case": "lower"
+  }
+}
