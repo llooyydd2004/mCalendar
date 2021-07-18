@@ -2,9 +2,15 @@
   "name": "mcalendar",
   "version": "1.0.0",
   "description": "Pure JS event calendar",
-  "main": "index.js",
+  "main": "config/webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/webpack-dev-server --config ./config/webpack.dev.js",
+    "prettier": "prettier --config .prettierrc --write src/scss/**/*.scss src/js/**/*.js",
+    "lint": "npm run lint:style && npm run lint:js",
+    "lint:style": "stylelint src/scss/**/*.scss --config .stylelintrc --fix",
+    "lint:js": "./node_modules/.bin/eslint -c .eslintrc src/js/**/*.js -f compact --fix",
+    "build": "./node_modules/.bin/webpack --config ./config/webpack.prod.js",
+    "bundle": "npm run prettier && npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +27,13 @@
   "bugs": {
     "url": "https://github.com/llooyydd2004/mCalendar/issues"
   },
-  "homepage": "https://github.com/llooyydd2004/mCalendar#readme"
+  "homepage": "https://github.com/llooyydd2004/mCalendar#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "babel": "^6.23.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "lint": "^0.7.0",
+    "prettier": "^2.3.2",
+    "webpack": "^5.45.1"
+  }
 }
